@@ -192,4 +192,3 @@ Este proyecto integra conocimientos de Python como manejo de bases de datos, est
 Te invito a ver su funcionamiento en el siguiente link:https://www.youtube.com/watch?v=NcFhVqYrZCE
 
 Realizado por Noelia Orsini para Talento Tech.
-Github Noelia Orsini
