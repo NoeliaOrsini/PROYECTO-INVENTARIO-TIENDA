@@ -129,6 +129,7 @@ Al intentar actualizar un producto, se validan los siguientes aspectos:
 
 Si el código del producto no existe, se muestra el siguiente error:
 "No se encontró el producto con ese código."
+
 Si los valores ingresados para cantidad o precio no son válidos, el sistema sigue pidiendo la entrada hasta que se proporcione un valor válido:
 "La cantidad no puede ser negativa."
 "El precio debe ser mayor que 0."
@@ -136,41 +137,6 @@ Si los valores ingresados para cantidad o precio no son válidos, el sistema sig
 ## Eliminación de Producto
 En el caso de intentar eliminar un producto que no existe, el sistema mostrará:
 "No se encontró el producto con ese código."
-Ejemplo de Entrada y Salida
-1. Registrar Producto
-Entrada:
-Nombre del producto: Teclado
-Descripción del producto: Teclado mecánico RGB
-Precio del producto: 80.5
-Cantidad en stock de Teclado: 50
-Categoría del producto: Tecnología
-Salida:
-Producto registrado con éxito. Código asignado: PROD123
-
-2. Buscar Producto
-Entrada:
-Ingrese el código del producto (por ejemplo, PROD123): prod123
-Salida:
-Producto encontrado con el código: PROD123
-Nombre      :    Teclado
-Descripción :    Teclado mecánico RGB
-Cantidad    :    50
-Precio      :   $80.5
-Categoría   :    Tecnología
-
-3. Actualizar Producto
-Entrada:
-
-Ingrese el código del producto que desea actualizar (por ejemplo, PROD123): prod123
-Nuevo nombre (dejar en blanco para no modificar): Teclado actualizado
-Salida:
-Producto actualizado con éxito.
-
-4. Eliminar Producto
-Entrada:
-Ingrese el código del producto que desea eliminar: prod123
-Salida:
-Producto eliminado con éxito.
 
 En las opciones 2,3 y 4 en las que son necesario identificar un producto por su codigo PRODXXX; Si el usuario ingresa un código sin el prefijo, el programa puede agregar el prefijo prod automáticamente antes de realizar la búsqueda, actualización o eliminación. 
 if not codigo.startswith('prod'):
